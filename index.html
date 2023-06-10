@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard TabGetInfo</title>
+  <link rel="stylesheet" href="shape_style.css">   
+  <script src="main.js" type="module" ></script>
+</head>
+<body>
+  <div class="banner1">    
+      FeedTabmate - Tableau DataDev Hackaton 2023 - Get Information from shared link by
+      &nbsp;<a href="https://www.linkedin.com/in/cristiansaavedradesmoineaux/" class="linkedIn">Cristian Saavedra Desmoineaux</a>,
+      &nbsp;<a href="https://www.linkedin.com/in/ruyaguilar/" class="linkedIn">Ruy Aguilar</a>,
+      &nbsp;<a href="javascript:void(0)" class="linkedIn">Diana Moreno</a>
+      &nbsp;& 
+      &nbsp;<a href="javascript:void(0)" class="linkedIn">Daniella Aguilar</a>
+  </div>
+  <div id="div_input">
+    <form id="inputForm">  
+      <label>Enter URL:</label>
+      <input id="inputURL" type="text" size="150" value="" />
+      <label>width:</label>
+      <input id="inputWidth" type="text" size="5" value="1200" />
+      <label>height:</label>
+      <input id="inputHeight" type="text" size="5" value="800" />      
+      <input id="bt_submit" type="submit" name="submit" value="Load" />
+      <button id="bt_getInformation">Get Info</button>
+      <button id="bt_mode">Edit</button>
+    </form>
+  </div>
+
+  <table>
+    <tr>
+      <td>
+          <div class="column" id="tableau-container" style="width:1200px; height:800px;"></div>
+      </td>
+      <td>
+          <div class="row">    
+            <div class="column" id="output" style="padding: 20px;">     
+            </div>
+          </div>
+      </td>
+    </tr>
+  </table>
+
+  <div id="wrapper"> 
+    <div class="banner2">    
+      <b>FeedTabmate</b> is a tool to help you reducing time in when you are getting feedbacks or supports from a Tableau Dashboard 
+    </div>
+  </div>
+</body>
+</html>
